@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.teachertipsforparents.bullybx.activities.SettingsActivity"
+                android:background="@drawable/chalkboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#2D6FAE"
+                android:id="@+id/relativeLayout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your school&apos;s code..."
+                    android:id="@+id/schoolsCodeText"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/light_blue_background"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:textColor="#fff"/>
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More about The BullyBøx"
+                android:id="@+id/moreAboutTheBullyBoxButton"
+                android:layout_below="@+id/relativeLayout"
+                android:layout_marginTop="68dp"
+                android:background="@drawable/blue_recangle"
+                android:layout_alignStart="@+id/relativeLayout"
+                android:layout_alignEnd="@+id/relativeLayout"
+                android:textColor="#ffffffff"
+                android:textSize="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up for the BullyBøx"
+                android:id="@+id/signUpForTheBullyBoxButton"
+                android:layout_marginTop="33dp"
+                android:background="@drawable/blue_recangle"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_below="@+id/moreAboutTheBullyBoxButton"
+                android:layout_alignStart="@+id/moreAboutTheBullyBoxButton"
+                android:layout_alignParentEnd="true"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3"
+                android:src="@drawable/logo"
+                android:layout_below="@+id/signUpForTheBullyBoxButton"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="22dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete past saved reports"
+                android:id="@+id/deletePastSavedReportsButton"
+                android:layout_below="@+id/imageView3"
+                android:background="@drawable/red_rectangle"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:layout_marginBottom="20dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

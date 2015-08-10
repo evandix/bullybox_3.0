@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".HomeActivity"
+                android:background="@drawable/chalkboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView4">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageViewForSelected"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report Bullying"
+                android:id="@+id/reportBullying"
+                android:layout_below="@+id/imageViewForSelected"
+                android:background="@drawable/red_background"
+                android:layout_alignStart="@+id/imageViewForSelected"
+                android:layout_alignEnd="@+id/imageViewForSelected"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="#fff"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View your reports"
+                android:id="@+id/viewReports"
+                android:layout_below="@+id/reportBullying"
+                android:background="@drawable/blue_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignEnd="@+id/imageViewForSelected"
+                android:layout_alignStart="@+id/imageViewForSelected"
+                android:textColor="#fff"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="State bullying law"
+                android:id="@+id/stateBullyingLaw"
+                android:layout_below="@+id/viewReports"
+                android:background="@drawable/blue_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignStart="@+id/imageViewForSelected"
+                android:layout_alignEnd="@+id/imageViewForSelected"
+                android:textColor="#fff"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="manage settings"
+                android:id="@+id/manageSettings"
+                android:layout_below="@+id/stateBullyingLaw"
+                android:background="@drawable/blue_background"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignEnd="@+id/imageViewForSelected"
+                android:layout_alignStart="@+id/imageViewForSelected"
+                android:textColor="#fff"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

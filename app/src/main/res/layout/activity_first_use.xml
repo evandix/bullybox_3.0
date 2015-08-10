@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context="com.teachertipsforparents.bullybx.activities.FirstUseActivity"
+                android:background="@drawable/chalkboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logosmall"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank you for downloading The BullyBøx!"
+                android:id="@+id/textView"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:textColor="#ffffffff"
+                android:textSize="25dp"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter your school code below. "
+                android:id="@+id/textView2"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textSize="19dp"
+                android:layout_margin="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:id="@+id/schoolCodeEditText"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/grey_background"
+                android:hint="Your school&apos;s code..."
+                android:padding="5dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Continue"
+                android:id="@+id/continueWithCodeButton"
+                android:layout_below="@+id/schoolCodeEditText"
+                android:background="@drawable/blue_background"
+                android:padding="5dp"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignStart="@+id/continueWithoutSchoolCode"
+                android:layout_alignEnd="@+id/continueWithoutSchoolCode"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:text="New Text"
+                android:id="@+id/textView3"
+                android:layout_below="@+id/continueWithCodeButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#ffffffff"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="If your school is not using The BullyBøx you can still see  the rest of the app without reporting and talk to your school about creating an account online for free!"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/textView3"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical|center_horizontal"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Continue without code"
+                android:id="@+id/continueWithoutSchoolCode"
+                android:layout_below="@+id/textView4"
+                android:background="@drawable/red_background"
+                android:layout_alignStart="@+id/visitWebsite"
+                android:padding="5dp"
+                android:layout_alignEnd="@+id/visitWebsite"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="open bullyboxreport.com"
+                android:id="@+id/visitWebsite"
+                android:layout_below="@+id/continueWithoutSchoolCode"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/blue_background"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+                android:textColor="#ffffff"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
